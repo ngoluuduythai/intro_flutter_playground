@@ -31,7 +31,7 @@ class _AnimatedContainerPageState extends State<AnimatedContainerPage> {
         title: Text('AnimatedContainer'),
       ),
       body: Center(
-        child: Container(
+        child: AnimatedContainer(
           // Use the properties stored in the State class.
           width: _width,
           height: _height,
@@ -39,6 +39,8 @@ class _AnimatedContainerPageState extends State<AnimatedContainerPage> {
             color: _color,
             borderRadius: _borderRadius,
           ),
+          duration: Duration(milliseconds: 300),
+          curve: Curves.fastOutSlowIn,
         ),
       ),
       floatingActionButton: FloatingActionButton(
