@@ -31,7 +31,8 @@ class _AnimatedContainerPageState extends State<AnimatedContainerPage> {
         title: Text('AnimatedContainer'),
       ),
       body: Center(
-        child: AnimatedContainer(
+        child: 
+        AnimatedContainer(
           // Use the properties stored in the State class.
           width: _width,
           height: _height,
